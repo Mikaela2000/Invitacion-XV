@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 235, 241);
+}
+
+.container section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro {
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.intro .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-img {
+    width: 100%;
+    height: 70vh;
+    /* Altura del contenedor */
+    overflow: hidden;
+    margin-top: 10px;
+    border-top: 4px solid rgb(164, 117, 43);
+    border-bottom: 4px solid rgb(164, 117, 43);
+}
+
+.cont-img img {
+    width: 100%;
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    max-height: 100%;
+    /* Limita la altura al 100% del contenedor */
+    object-fit: cover;
+    /* Asegura que la imagen cubra el contenedor */
+    object-position: center top;
+    /* Centra la imagen en la parte superior */
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.descripcion .comp{
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+.titulo h1{
+    font-size: 35px;
+}
+.descripcion .frase {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.img-heart {
+    width: 40px;
+    margin-bottom: 20px;
+
+}
+
+.img-heart img {
+    width: 100%;
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    max-height: 100%;
+    /* Limita la altura al 100% del contenedor */
+    object-fit: cover;
+    /* Asegura que la imagen cubra el contenedor */
+    object-position: center top;
+    /* Centra la imagen en la parte superior */
+
+}
+.fecha{
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+    width: 220px;
+}
+.fecha p{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding-top: 10px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
+}
+.año{
+    /* font-family: "Nunito", sans-serif; */
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 15px;
+    letter-spacing: 0.3em;
+
+}
+
+.container-ubicacion{
+    background-color: rgb(167,147,174);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(240, 248, 255, 0.801);
+    margin-top: 20px;
+    padding-top: 10px;
+
+}
+.container-ubicacion h1{
+    font-size: 35px;
+    font-weight: 400;
+}
+.container-ubicacion p{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 25px;
+}
+.container-ubicacion button {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 17px;
+    margin-top: 25px;
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgb(164, 117, 43), rgba(192, 182, 35, 0.39)); /* Degradado de dorado a más claro */
+    border-radius: 40px;
+    color: rgba(240, 248, 255, 0.801);
+    border: none;
+    margin-bottom: 55px;
+}
+
+.container-fiesta{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 70px;
+}
+.container-fiesta img{
+    width: 100%;
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    max-height: 100%;
+    /* Limita la altura al 100% del contenedor */
+    object-fit: cover;
+    /* Asegura que la imagen cubra el contenedor */
+    object-position: center top;
+    /* Centra la imagen en la parte superior */
+
+}
+.conteiner-imgs {
+    position: relative;
+    width: 100%;
+}
+
+.foto2 {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    border-top: 4px solid rgb(164, 117, 43);
+    border-bottom: 4px solid rgb(164, 117, 43);
+    position: relative; /* Necesario para que el contenido absoluto se posicione en relación con este contenedor */
+}
+
+.globos {
+    position: absolute; /* Posiciona el elemento absolutamente dentro del contenedor relativo */
+    top: 0; /* Alinea con la parte superior del contenedor */
+    right: 0; /* Alinea con la parte izquierda del contenedor */
+    display: flex;
+    z-index: 1;
+    width: 100px;
+}
+.globos img{
+    width: 100%;
+}
+.foto2 img{
+    width: 100%;
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    max-height: 100%;
+    /* Limita la altura al 100% del contenedor */
+    object-fit: cover;
+    /* Asegura que la imagen cubra el contenedor */
+    object-position: center top;
+    /* Centra la imagen en la parte superior */
+}
+.desc2{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.vestimenta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.vestimenta img{
+    width: 40px;
+}
+.vestimenta p{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 13px;
+}
+.obsequio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.obsequio img{
+    width: 40px;
+}
+.obsequio p{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 13px;
+}
+.linea{
+    border: 0.5px solid rgb(164, 117, 43);
+    height: 60px;
+}
+.container-reserv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: rgb(167,147,174);
+    padding-top: 25px;
+    color: rgba(240, 248, 255, 0.801);
+    width: 100%;
+}
+.container-reserv p {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 35px;
+    letter-spacing: 0.2em;
+    width: 300px;
+}
+
+.container-reserv p span {
+    display: block;
+    margin-bottom: 10px; /* Ajusta este valor según el espacio deseado */
+}
+.container-reserv h2{
+    font-weight: 400;
+    
+}
+.container-reserv h3{
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    margin-top: 20px;
+    letter-spacing: 0.2em;
+}
+.container-reserv h1{
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 35px;
+    margin-top: 20px;
+    border-bottom: 1px solid;
+    width: 40px;
+    text-align: center;
+    
+}
+.container button{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 17px;
+    margin-top: 25px;
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgb(164, 117, 43), rgba(192, 182, 35, 0.39)); /* Degradado de dorado a más claro */
+    border-radius: 40px;
+    color: rgba(240, 248, 255, 0.801);
+    border: none;
+    margin-bottom: 50px;
+}
+
+.agradecimiento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.agradecimiento p{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 35px;
+    letter-spacing: 0.2em;
+    width: 300px;
+}
+.agradecimiento p span {
+    display: block;
+    margin-bottom: 10px; /* Ajusta este valor según el espacio deseado */
+}
+.agradecimiento h2{
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.img-flor{
+    width: 100px;
+    margin-top: 20px;
+}
+.img-flor img{
+    width: 100%;
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    max-height: 100%;
+    /* Limita la altura al 100% del contenedor */
+    object-fit: cover;
+    /* Asegura que la imagen cubra el contenedor */
+    object-position: center top;
+    /* Centra la imagen en la parte superior */
+}
